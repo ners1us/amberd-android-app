@@ -33,7 +33,7 @@ class AuthActivity : AppCompatActivity() {
                 val db = DbHelper(this, null)
                 val isAuth = db.getUser(login, password)
 
-                if (isAuth == true) {
+                if (isAuth) {
                     Toast.makeText(this, "The user $login has logged in!", Toast.LENGTH_SHORT).show()
                     userLogin.text.clear()
                     userPassword.text.clear()

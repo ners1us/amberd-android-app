@@ -75,6 +75,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
+        android:textStyle="bold"
         android:text="Log in"
         android:textColor="#fdfdfd"
         android:textSize="17sp" />
