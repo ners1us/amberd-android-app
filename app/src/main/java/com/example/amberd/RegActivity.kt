@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class RegActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 

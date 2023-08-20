@@ -19,7 +19,7 @@ class AuthActivity : AppCompatActivity() {
         val linkToReg: TextView = findViewById(R.id.link_to_reg)
 
         linkToReg.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, RegActivity::class.java)
             startActivity(intent)
         }
 
@@ -38,7 +38,7 @@ class AuthActivity : AppCompatActivity() {
                     userLogin.text.clear()
                     userPassword.text.clear()
 
-                    val intent = Intent(this, ItemsActivity::class.java)
+                    val intent = Intent(this, ItemsListActivity::class.java)
                     startActivity(intent)
 
                 } else {
