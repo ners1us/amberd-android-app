@@ -34,8 +34,8 @@ class ItemsAdapter (var items: List<Item>, var context: Context) : RecyclerView.
             "drawable",
             context.packageName
         )
-        holder.image.setImageResource(imageId)
 
+        holder.image.setImageResource(imageId)
         holder.btn.setOnClickListener {
             val intent = Intent(context, ItemActivity::class.java)
 

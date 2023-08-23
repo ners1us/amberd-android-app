@@ -28,10 +28,12 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".AuthActivity"
+            android:noHistory = "true"
             android:configChanges="orientation|screenSize"
             android:exported="false" />
         <activity
             android:name=".RegActivity"
+            android:noHistory = "true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
