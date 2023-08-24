@@ -1,12 +1,12 @@
 package com.example.amberd
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +19,7 @@ class AuthActivity : AppCompatActivity() {
         val linkToReg: TextView = findViewById(R.id.link_to_reg)
 
         linkToReg.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, RegActivity::class.java)
             startActivity(intent)
         }
 
@@ -38,7 +38,7 @@ class AuthActivity : AppCompatActivity() {
                     userLogin.text.clear()
                     userPassword.text.clear()
 
-                    val intent = Intent(this, ItemsActivity::class.java)
+                    val intent = Intent(this, ItemsListActivity::class.java)
                     startActivity(intent)
 
                 } else {
