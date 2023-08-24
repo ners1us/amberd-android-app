@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/rectangle_drawable"
+    android:background="#8B868C"
     tools:context=".ItemActivity">
 
     <TextView
@@ -16,7 +15,7 @@
         android:paddingHorizontal="20dp"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:text="TextView" />
+        android:text="@string/textview" />
 
     <TextView
         android:id="@+id/itemList_desc_text"
@@ -25,14 +24,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="20dp"
-        android:text="TextView"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:text="@string/textview"  />
 
     <Button
         android:id="@+id/item_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#4C5CBA"
-        android:text="Buy" />
+        android:background="@drawable/button_drawable"
+        android:text="@string/buy" />
+
 </LinearLayout>
