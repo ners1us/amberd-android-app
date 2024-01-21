@@ -10,4 +10,5 @@
     <string name="email_text">Email</string>
     <string name="no_text">No Text</string>
     <string name="buy_text">Buy</string>
+    <string name="more_text">More</string>
 </resources>

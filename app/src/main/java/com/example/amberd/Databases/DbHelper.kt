@@ -11,7 +11,6 @@ class DbHelper (context: Context, factory: SQLiteDatabase.CursorFactory?) :
     override fun onCreate(db: SQLiteDatabase?) {
         val query = "CREATE TABLE users (id INT PRIMARY KEY, login TEXT, email TEXT, password TEXT)"
         db!!.execSQL(query)
-
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
@@ -37,6 +36,4 @@ class DbHelper (context: Context, factory: SQLiteDatabase.CursorFactory?) :
 
         return result.moveToFirst()
     }
-
-
 }

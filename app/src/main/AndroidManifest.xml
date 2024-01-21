@@ -19,19 +19,24 @@
         android:theme="@style/Theme.Amberd"
         tools:targetApi="31">
         <activity
-            android:name="com.example.amberd.Activities.ItemsActivity"
+            android:name=".Activities.ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ItemsActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="false"
             android:configChanges="orientation|screenSize"
             />
         <activity
-            android:name="com.example.amberd.Activities.AuthActivity"
+            android:name=".Activities.AuthActivity"
             android:exported="false"
             android:configChanges="orientation|screenSize"
+            android:noHistory="true"
             />
         <activity
-            android:name="com.example.amberd.Activities.MainActivity"
-            android:exported="true">
+            android:name=".Activities.MainActivity"
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

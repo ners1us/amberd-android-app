@@ -42,7 +42,6 @@ class AuthActivity : AppCompatActivity() {
 
                     val intent = Intent(this, ItemsActivity::class.java)
                     startActivity(intent)
-                    finish()
 
                 } else {
                     Toast.makeText(this, "The user $login doesn't exist!", Toast.LENGTH_SHORT).show()

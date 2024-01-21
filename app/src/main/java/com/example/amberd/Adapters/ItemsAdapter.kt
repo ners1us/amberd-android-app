@@ -1,21 +1,25 @@
 package com.example.amberd.Adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.amberd.Activities.ItemActivity
 import com.example.amberd.Models.Item
 import com.example.amberd.R
 
-class ItemsAdapter (private var items: List<Item>, private var context: Context) : RecyclerView.Adapter<ItemsAdapter.MyViewHolder>() {
+class ItemsAdapter (var items: List<Item>, var context: Context) : RecyclerView.Adapter<ItemsAdapter.MyViewHolder>() {
     class MyViewHolder (view: View) : RecyclerView.ViewHolder(view) {
         val image: ImageView = view.findViewById(R.id.itemList_image)
         val title: TextView = view.findViewById(R.id.itemList_title)
         val desc: TextView = view.findViewById(R.id.itemList_desc)
         val price: TextView = view.findViewById(R.id.itemList_price)
+        val btn: Button = view.findViewById(R.id.itemList_button)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -34,6 +38,16 @@ class ItemsAdapter (private var items: List<Item>, private var context: Context)
             context.packageName
         )
         holder.image.setImageResource(imageId)
+
+        holder.btn.setOnClickListener {
+            val intent = Intent(context, ItemActivity::class.java)
+
+            intent.putExtra("itemTitle", items[position].title)
+            intent.putExtra("itemDesc", items[position].text)
+
+            context.startActivity(intent)
+
+        }
     }
 
     override fun getItemCount(): Int {
