@@ -1,0 +1,1 @@
+## This is a prototype food store android application that uses SQLite database
