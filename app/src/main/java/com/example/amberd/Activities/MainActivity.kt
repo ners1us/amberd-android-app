@@ -1,4 +1,4 @@
-package com.example.amberd
+package com.example.amberd.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.amberd.Databases.DbHelper
+import com.example.amberd.R
+import com.example.amberd.Models.User
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         linkToAuth.setOnClickListener {
             val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         button.setOnClickListener {

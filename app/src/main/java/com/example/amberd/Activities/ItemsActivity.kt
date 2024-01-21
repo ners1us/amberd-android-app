@@ -1,9 +1,12 @@
-package com.example.amberd
+package com.example.amberd.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.amberd.Models.Item
+import com.example.amberd.Adapters.ItemsAdapter
+import com.example.amberd.R
 
 class ItemsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

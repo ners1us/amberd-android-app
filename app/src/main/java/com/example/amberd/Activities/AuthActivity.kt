@@ -1,4 +1,4 @@
-package com.example.amberd
+package com.example.amberd.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.amberd.Databases.DbHelper
+import com.example.amberd.R
 
 class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +42,7 @@ class AuthActivity : AppCompatActivity() {
 
                     val intent = Intent(this, ItemsActivity::class.java)
                     startActivity(intent)
+                    finish()
 
                 } else {
                     Toast.makeText(this, "The user $login doesn't exist!", Toast.LENGTH_SHORT).show()

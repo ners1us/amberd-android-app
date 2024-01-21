@@ -1,4 +1,4 @@
-package com.example.amberd
+package com.example.amberd.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.amberd.Models.Item
+import com.example.amberd.R
 
 class ItemsAdapter (private var items: List<Item>, private var context: Context) : RecyclerView.Adapter<ItemsAdapter.MyViewHolder>() {
     class MyViewHolder (view: View) : RecyclerView.ViewHolder(view) {

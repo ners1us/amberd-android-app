@@ -52,5 +52,5 @@
         android:backgroundTint="#4C5CBA"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/no_text" />
+        android:text="@string/buy_text" />
 </LinearLayout>

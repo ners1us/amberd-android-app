@@ -1,9 +1,10 @@
-package com.example.amberd
+package com.example.amberd.Databases
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.amberd.Models.User
 
 class DbHelper (context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, "app", factory, 1){

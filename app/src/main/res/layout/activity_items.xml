@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#1B031E"
-    tools:context=".ItemsActivity">
+    tools:context=".Activities.ItemsActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
